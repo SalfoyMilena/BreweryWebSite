@@ -1,0 +1,14 @@
+<app-top-header (searchFood)="onFoodMatchSearch($event)"></app-top-header>
+<div class="container">
+    <button (click)="openValidationPopUp=true" class="remove-all" *ngIf="this.currentRoute == '/favorites'">Remove All</button>
+    <div class="beers-container">
+        <div class="beer" *ngFor="let beer of beers| paginate: { itemsPerPage: 12, currentPage: p }">
+            <app-beer-item (ToggleFavoirteBtn)="ToggleFavorite($event)" (Ranking)="rank(beer.id,$event)" [beer]="beer">
+            </app-beer-item>
+        </div>
+
+        <pagination-controls class="beer-pagination" (pageChange)="p = $event"></pagination-controls>
+    </div>
+</div>
+<app-validation-pop-up [message]="message" *ngIf="openValidationPopUp" (sureToRemove)="deleteAll($event)">
+</app-validation-pop-up>

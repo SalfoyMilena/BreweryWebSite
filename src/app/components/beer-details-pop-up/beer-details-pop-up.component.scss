@@ -1,0 +1,63 @@
+.beer-info-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.553);
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    .info-pop-up {
+        position: fixed;
+        top: 10vh;
+        left: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c8683b;
+        height: 80vh;
+        width: 50vw;
+        z-index: 5;
+        padding: 30px;
+        .close-btn{
+            cursor: pointer;
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            left: 10px;
+            top: 10px;
+            border: none;
+            background-color: transparent;
+        }
+        .image-container{
+            height: 100%;
+            .beer-image{
+                height: 90%;
+                margin-top: 20%;
+            } 
+        }
+        .beer-info{
+            margin-left: 25px;
+            align-self: center;
+            .name{
+                color: white;
+                font-size: xx-large;
+                font-weight: 600;
+            }
+            .extre-info{
+                margin-top: 10px;
+                &>div{
+                    padding: 10px;
+                    display: flex;
+                    border-top: dotted;
+                    &>h3{
+                        margin-right: 10px;
+                    }
+                }
+                .ph{
+                    border-bottom: dotted ;
+                }
+            }
+        }
+    }
+}

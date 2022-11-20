@@ -1,7 +1,13 @@
+import { BeerDetailsPopUpComponent } from './components/beer-details-pop-up/beer-details-pop-up.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BeersComponent } from './components/beers/beers.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component: BeersComponent},
+  {path:'favorites',component: BeersComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

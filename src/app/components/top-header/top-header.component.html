@@ -1,0 +1,28 @@
+<div class="top-header-container">
+    <div class="left-info">
+        <div class="logo-container">
+            <img src="assets/Logo.png" alt="logo">
+        </div>
+        <div class="navigation-and-logo">
+            <div class="browse-beers" routerLink="/">
+                <h5>- Browse Beers -</h5>
+            </div>
+            <div class="favorites-Beers" routerLink="/favorites">
+                <h5>- Favorites -</h5>
+            </div>
+        </div>
+
+        <div class="serach-section">
+            <form action="javascript:" class="search-bar">
+                <input type="search" name="search" pattern=".*\S.*" #search>
+                <button class="search-btn" type="submit" (click)="SearchFoodsMatchWithBeers(search.value)">
+                    <span>Search</span>
+                </button>
+            </form>
+            <h5>Find a beer that goes with your food</h5>
+        </div>
+    </div>
+    <div class="theme-image">
+        <img src="assets/BEERTIME.png" alt="beers-image">
+    </div>
+</div>
