@@ -1,7 +1,6 @@
 import { Router } from '@angular/router';
 import { Beer } from './../../models/beer';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { MatMenu } from '@angular/material/menu';
 
 @Component({
   selector: 'app-beer-item',

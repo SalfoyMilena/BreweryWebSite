@@ -9,10 +9,7 @@ import { BeerItemComponent } from './components/beer-item/beer-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BeerDetailsPopUpComponent } from './components/beer-details-pop-up/beer-details-pop-up.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-import {MatDialogModule} from '@angular/material/dialog';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ValidationPopUpComponent } from './components/validation-pop-up/validation-pop-up.component';
-import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -29,7 +26,6 @@ import {MatMenuModule} from '@angular/material/menu';
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule,
-    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,3 @@
-import { BeerDetailsPopUpComponent } from './components/beer-details-pop-up/beer-details-pop-up.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';

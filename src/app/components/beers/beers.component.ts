@@ -1,10 +1,8 @@
 import { BeersServiceService } from './../../services/beers-service.service';
 import { Beer } from './../../models/beer';
 import { Component, OnInit } from '@angular/core';
-import { Observable, BehaviorSubject, Subscription } from 'rxjs';
-import { map } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-beers',
